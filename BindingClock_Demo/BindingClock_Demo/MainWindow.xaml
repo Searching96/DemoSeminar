@@ -1,0 +1,33 @@
+﻿<Window x:Class="BindingClock_Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="High-Precision Clock" Height="250" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#2c3e50" CornerRadius="10" Margin="20">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Text="{Binding CurrentTime}" 
+                           FontSize="48" 
+                           Foreground="#ecf0f1" 
+                           HorizontalAlignment="Center"
+                           FontWeight="Bold"/>
+                <TextBlock Text="{Binding CurrentDate}" 
+                           FontSize="18" 
+                           Foreground="#bdc3c7" 
+                           HorizontalAlignment="Center"
+                           Margin="0,10,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <TextBlock Grid.Row="1" 
+                   Text="High-Precision Clock Demo" 
+                   FontSize="14" 
+                   Foreground="#34495e"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,10"/>
+    </Grid>
+</Window>
