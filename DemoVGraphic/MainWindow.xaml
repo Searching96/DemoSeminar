@@ -28,7 +28,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Canvas Grid.Column="0" Grid.Row="0" Background="{StaticResource BackgroundGradient}" RenderTransformOrigin="0.5,0.5">
+        <Canvas x:Name="MainCanvas" Grid.Column="0" Grid.Row="0" Background="{StaticResource BackgroundGradient}" RenderTransformOrigin="0.5,0.5" MouseWheel="Canvas_MouseWheel">
             <!-- Rest of the XAML content remains exactly the same -->
             <!-- Main vine stem -->
             <Path Stroke="{StaticResource VineGradient}" StrokeThickness="3" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="106" RenderTransformOrigin="0.5,0.5" Canvas.Left="-85">

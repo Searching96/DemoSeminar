@@ -20,5 +20,23 @@ namespace DemoVGraphic
         {
             InitializeComponent();
         }
+
+        private void Canvas_MouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            // Lấy ScaleTransform hiện tại hoặc khởi tạo mới
+            var scaleTransform = MainCanvas.RenderTransform as ScaleTransform;
+            if (scaleTransform == null)
+            {
+                scaleTransform = new ScaleTransform();
+                MainCanvas.RenderTransform = scaleTransform;
+            }
+
+            // Thiết lập hệ số zoom
+            double zoomFactor = e.Delta > 0 ? 1.1 : 1 / 1.1;
+
+            // Cập nhật tỷ lệ scale
+            scaleTransform.ScaleX *= zoomFactor;
+            scaleTransform.ScaleY *= zoomFactor;
+        }
     }
 }

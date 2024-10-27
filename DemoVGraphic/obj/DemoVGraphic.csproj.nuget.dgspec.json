@@ -1,34 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\DemoVGraphic\\DemoVGraphic\\DemoVGraphic.csproj": {}
+    "D:\\WPF\\DemoSeminar\\DemoVGraphic\\DemoVGraphic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\DemoVGraphic\\DemoVGraphic\\DemoVGraphic.csproj": {
+    "D:\\WPF\\DemoSeminar\\DemoVGraphic\\DemoVGraphic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\DemoVGraphic\\DemoVGraphic\\DemoVGraphic.csproj",
+        "projectUniqueName": "D:\\WPF\\DemoSeminar\\DemoVGraphic\\DemoVGraphic.csproj",
         "projectName": "DemoVGraphic",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\DemoVGraphic\\DemoVGraphic\\DemoVGraphic.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\DemoVGraphic\\DemoVGraphic\\obj\\",
+        "projectPath": "D:\\WPF\\DemoSeminar\\DemoVGraphic\\DemoVGraphic.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\WPF\\DemoSeminar\\DemoVGraphic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-windows"
+          "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows",
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
             "projectReferences": {}
           }
         },
@@ -36,16 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "imports": [
             "net461",
             "net462",
@@ -65,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
