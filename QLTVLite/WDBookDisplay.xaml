@@ -1,0 +1,169 @@
+﻿<Window x:Class="QLTVLite.WDBookDisplay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLTVLite"
+        mc:Ignorable="d"
+        Title="Book Collection" Height="600" Width="715"
+        Background="#F5F5F5">
+
+    <Window.Resources>
+        <!-- Style cho Button -->
+        <Style x:Key="NavigationButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Background" Value="#2196F3"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="16"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#1976D2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#0D47A1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style cho Book Card -->
+        <Style x:Key="BookCardStyle" TargetType="Border">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10" 
+                                    Color="#22000000" 
+                                    ShadowDepth="3" 
+                                    Opacity="0.3"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Text="Book Collection" 
+                 FontSize="24" 
+                 FontWeight="Bold" 
+                 Margin="20,20,20,10"
+                 Foreground="#333333"/>
+
+        <!-- Book List -->
+        <ScrollViewer Grid.Row="1" 
+                     VerticalScrollBarVisibility="Auto" 
+                     HorizontalScrollBarVisibility="Disabled">
+            <ItemsControl ItemsSource="{Binding Books}" 
+                         Margin="10">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Style="{StaticResource BookCardStyle}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="250"/>
+                                    <!-- Fixed height for image -->
+                                    <RowDefinition Height="Auto"/>
+                                    <!-- Auto height for content -->
+                                </Grid.RowDefinitions>
+
+                                <!-- Book Cover -->
+                                <Border CornerRadius="8,8,0,0" 
+                        ClipToBounds="True">
+                                    <Image Source="{Binding BiaSach}" 
+                           Stretch="UniformToFill"/>
+                                </Border>
+
+                                <!-- Book Info -->
+                                <StackPanel Grid.Row="1" 
+                          Margin="15,15,15,15">
+                                    <!-- Book Title - Fixed 2 lines -->
+                                    <TextBlock Text="{Binding TenSach}" 
+                             FontSize="16" 
+                             FontWeight="SemiBold" 
+                             TextWrapping="Wrap"
+                             MaxHeight="44"
+                             Height="44"
+                             TextTrimming="WordEllipsis"
+                             LineHeight="22"
+                             LineStackingStrategy="BlockLineHeight"
+                             Margin="0,0,0,5"
+                             Foreground="#333333"
+                             ToolTip="{Binding TenSach}"/>
+
+                                    <!-- Published Year - Fixed 1 line -->
+                                    <Grid Height="22">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Text="Published: " 
+                                 Foreground="#666666"
+                                 FontSize="14"
+                                 VerticalAlignment="Center"/>
+                                        <TextBlock Text="{Binding NamXuatBan}" 
+                                 Grid.Column="1"
+                                 Foreground="#666666"
+                                 FontSize="14"
+                                 TextTrimming="CharacterEllipsis"
+                                 VerticalAlignment="Center"/>
+                                    </Grid>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- Navigation -->
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center" 
+                    Margin="0,10,0,20">
+            <Button Content="Previous" 
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Command="{Binding PreviousPageCommand}"/>
+
+            <Border Background="White" 
+                    CornerRadius="4" 
+                    Margin="10,0" 
+                    Padding="15,5">
+                <TextBlock Text="{Binding CurrentPage}" 
+                           FontSize="16" 
+                           FontWeight="SemiBold"
+                           Foreground="#333333"
+                           VerticalAlignment="Center"/>
+            </Border>
+
+            <Button Content="Next" 
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Command="{Binding NextPageCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>
