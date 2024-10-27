@@ -1,0 +1,202 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="DemoVGraphic.MainWindow"
+        Title="Bezier Art - Flowering Vine" Height="600" Width="800">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#864BA2" Offset="0"/>
+            <GradientStop Color="#BF3A30" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="VineGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF2D5A27" Offset="0"/>
+            <GradientStop Color="#FF1E3B1B" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="FlowerGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFFF9ECD" Offset="0"/>
+            <GradientStop Color="#FFFF5BB0" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="FlowerGradient2" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFED00" Offset="0"/>
+            <GradientStop Color="#FF0000" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Canvas Grid.Column="0" Grid.Row="0" Background="{StaticResource BackgroundGradient}" RenderTransformOrigin="0.5,0.5">
+            <!-- Rest of the XAML content remains exactly the same -->
+            <!-- Main vine stem -->
+            <Path Stroke="{StaticResource VineGradient}" StrokeThickness="3" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="106" RenderTransformOrigin="0.5,0.5" Canvas.Left="-85">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-31.949"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Data>
+                    <PathGeometry Figures="M380,310 C400,280 420,300 410,260"/>
+                </Path.Data>
+            </Path>
+
+            <!-- Main vine stem -->
+            <Path Stroke="{StaticResource VineGradient}" StrokeThickness="8" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.537,0.497">
+                <Path.Data>
+                    <PathGeometry Figures="M50,500 C150,400 250,350 350,300 C450,250 550,200 650,150"/>
+                </Path.Data>
+            </Path>
+
+            <!-- Main vine stem -->
+            <Path Stroke="{StaticResource VineGradient}" StrokeThickness="8">
+                <Path.Data>
+                    <PathGeometry Figures="M50,500 C150,400 250,350 350,300 C450,250 550,200 650,150"/>
+                </Path.Data>
+            </Path>
+
+            <!-- Leaf 1 -->
+            <Path Fill="{StaticResource VineGradient}" Opacity="0.9">
+                <Path.Data>
+                    <PathGeometry Figures="M200,380 C230,340 260,360 250,320 C240,300 180,330 200,380"/>
+                </Path.Data>
+            </Path>
+
+            <!-- Leaf 2 -->
+            <Path Fill="{StaticResource VineGradient}" Opacity="0.9" Canvas.Left="210.339" Canvas.Top="363.656" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Width="69" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="157.768"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Data>
+                    <PathGeometry Figures="M450,220 C480,190 510,210 500,170 C490,150 440,180 450,220"/>
+                </Path.Data>
+            </Path>
+
+            <!-- Flowers -->
+            <Canvas>
+                <!-- Flower 1 -->
+                <Path Fill="{StaticResource FlowerGradient}" Height="72" Stretch="Fill" Width="72" Canvas.Left="314.755" Canvas.Top="266.481" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-1.335"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                    <Path.Data>
+                        <GeometryGroup>
+                            <EllipseGeometry Center="350,300" RadiusX="20" RadiusY="8">
+                                <EllipseGeometry.Transform>
+                                    <RotateTransform Angle="45" CenterX="350" CenterY="300"/>
+                                </EllipseGeometry.Transform>
+                            </EllipseGeometry>
+                            <EllipseGeometry Center="350,300" RadiusX="20" RadiusY="8">
+                                <EllipseGeometry.Transform>
+                                    <RotateTransform Angle="90" CenterX="350" CenterY="300"/>
+                                </EllipseGeometry.Transform>
+                            </EllipseGeometry>
+                            <EllipseGeometry Center="350,300" RadiusX="20" RadiusY="8">
+                                <EllipseGeometry.Transform>
+                                    <RotateTransform Angle="135" CenterX="350" CenterY="300"/>
+                                </EllipseGeometry.Transform>
+                            </EllipseGeometry>
+                            <EllipseGeometry Center="350,300" RadiusX="20" RadiusY="8">
+                                <EllipseGeometry.Transform>
+                                    <RotateTransform Angle="180" CenterX="350" CenterY="300"/>
+                                </EllipseGeometry.Transform>
+                            </EllipseGeometry>
+                        </GeometryGroup>
+                    </Path.Data>
+                </Path>
+
+                <!-- Flower centers -->
+                <Ellipse Fill="#FEAE96" Width="31" Height="31" Canvas.Left="335" Canvas.Top="287" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Ellipse Fill="#FFE190" Width="29" Height="29" Canvas.Left="639" Canvas.Top="139" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <!-- Flower 2 -->
+                <Path Fill="{StaticResource FlowerGradient2}" Height="69" Stretch="Fill" Width="69" Canvas.Left="619" Canvas.Top="119" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Path.Data>
+                        <GeometryGroup>
+                            <EllipseGeometry Center="650,150" RadiusX="20" RadiusY="8">
+                                <EllipseGeometry.Transform>
+                                    <RotateTransform Angle="45" CenterX="650" CenterY="150"/>
+                                </EllipseGeometry.Transform>
+                            </EllipseGeometry>
+                            <EllipseGeometry Center="650,150" RadiusX="20" RadiusY="8">
+                                <EllipseGeometry.Transform>
+                                    <RotateTransform Angle="90" CenterX="650" CenterY="150"/>
+                                </EllipseGeometry.Transform>
+                            </EllipseGeometry>
+                            <EllipseGeometry Center="650,150" RadiusX="20" RadiusY="8">
+                                <EllipseGeometry.Transform>
+                                    <RotateTransform Angle="135" CenterX="650" CenterY="150"/>
+                                </EllipseGeometry.Transform>
+                            </EllipseGeometry>
+                            <EllipseGeometry Center="650,150" RadiusX="20" RadiusY="8">
+                                <EllipseGeometry.Transform>
+                                    <RotateTransform Angle="180" CenterX="650" CenterY="150"/>
+                                </EllipseGeometry.Transform>
+                            </EllipseGeometry>
+                        </GeometryGroup>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+
+            <Path Stroke="{StaticResource VineGradient}" StrokeThickness="3" HorizontalAlignment="Left" Canvas.Left="-80" VerticalAlignment="Center" Canvas.Top="18" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="6.711"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Data>
+                    <PathGeometry Figures="M670,160 C690,130 710,150 700,110"/>
+                </Path.Data>
+            </Path>
+            <!-- Leaf 1 -->
+            <Path Fill="{StaticResource VineGradient}" Opacity="0.9" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Path.Data>
+                    <PathGeometry Figures="M200,380 C230,340 260,360 250,320 C240,300 180,330 200,380"/>
+                </Path.Data>
+            </Path>
+            <!-- Leaf 2 -->
+            <Path Fill="{StaticResource VineGradient}" Opacity="0.9" Canvas.Left="390.633" Canvas.Top="192.814" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Width="62" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="274.823"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Data>
+                    <PathGeometry Figures="M450,220 C480,190 510,210 500,170 C490,150 440,180 450,220"/>
+                </Path.Data>
+            </Path>
+            <Path Fill="{StaticResource VineGradient}" Opacity="0.9" Canvas.Left="471.418" Canvas.Top="235.656" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Width="69" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="176.542"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Data>
+                    <PathGeometry Figures="M450,220 C480,190 510,210 500,170 C490,150 440,180 450,220"/>
+                </Path.Data>
+            </Path>
+        </Canvas>
+    </Grid>
+</Window>
