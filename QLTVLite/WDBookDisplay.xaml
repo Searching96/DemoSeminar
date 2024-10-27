@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:QLTVLite"
         mc:Ignorable="d"
         Title="Book Collection" Height="600" Width="715"
-        Background="#F5F5F5">
+        Background="#F5F5F5"
+        WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
         <!-- Style cho Button -->
@@ -48,9 +49,9 @@
             <Setter Property="Effect">
                 <Setter.Value>
                     <DropShadowEffect BlurRadius="10" 
-                                    Color="#22000000" 
-                                    ShadowDepth="3" 
-                                    Opacity="0.3"/>
+                                      Color="#22000000" 
+                                      ShadowDepth="3" 
+                                      Opacity="0.3"/>
                 </Setter.Value>
             </Setter>
         </Style>
@@ -93,27 +94,27 @@
 
                                 <!-- Book Cover -->
                                 <Border CornerRadius="8,8,0,0" 
-                        ClipToBounds="True">
+                                        ClipToBounds="True">
                                     <Image Source="{Binding BiaSach}" 
-                           Stretch="UniformToFill"/>
+                                           Stretch="UniformToFill"/>
                                 </Border>
 
                                 <!-- Book Info -->
                                 <StackPanel Grid.Row="1" 
-                          Margin="15,15,15,15">
+                                            Margin="15,15,15,15">
                                     <!-- Book Title - Fixed 2 lines -->
                                     <TextBlock Text="{Binding TenSach}" 
-                             FontSize="16" 
-                             FontWeight="SemiBold" 
-                             TextWrapping="Wrap"
-                             MaxHeight="44"
-                             Height="44"
-                             TextTrimming="WordEllipsis"
-                             LineHeight="22"
-                             LineStackingStrategy="BlockLineHeight"
-                             Margin="0,0,0,5"
-                             Foreground="#333333"
-                             ToolTip="{Binding TenSach}"/>
+                                               FontSize="16" 
+                                               FontWeight="SemiBold" 
+                                               TextWrapping="Wrap"
+                                               MaxHeight="44"
+                                               Height="44"
+                                               TextTrimming="WordEllipsis"
+                                               LineHeight="22"
+                                               LineStackingStrategy="BlockLineHeight"
+                                               Margin="0,0,0,5"
+                                               Foreground="#333333"
+                                               ToolTip="{Binding TenSach}"/>
 
                                     <!-- Published Year - Fixed 1 line -->
                                     <Grid Height="22">
@@ -123,15 +124,15 @@
                                         </Grid.ColumnDefinitions>
 
                                         <TextBlock Text="Published: " 
-                                 Foreground="#666666"
-                                 FontSize="14"
-                                 VerticalAlignment="Center"/>
+                                                   Foreground="#666666"
+                                                   FontSize="14"
+                                                   VerticalAlignment="Center"/>
                                         <TextBlock Text="{Binding NamXuatBan}" 
-                                 Grid.Column="1"
-                                 Foreground="#666666"
-                                 FontSize="14"
-                                 TextTrimming="CharacterEllipsis"
-                                 VerticalAlignment="Center"/>
+                                                   Grid.Column="1"
+                                                   Foreground="#666666"
+                                                   FontSize="14"
+                                                   TextTrimming="CharacterEllipsis"
+                                                   VerticalAlignment="Center"/>
                                     </Grid>
                                 </StackPanel>
                             </Grid>
