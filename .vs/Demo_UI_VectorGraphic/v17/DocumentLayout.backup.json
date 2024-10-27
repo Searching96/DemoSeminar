@@ -1,45 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Demo_UI_VectorGraphic\\",
+  "WorkspaceRootPath": "E:\\Phan1_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\loginapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\loginapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\loginapp_advanced.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\phan1_2\\demo_ui_vectorgraphic\\loginapp_advanced.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\loginapp_advanced.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\loginapp_advanced.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\phan1_2\\demo_ui_vectorgraphic\\loginapp_advanced.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\loginapp_advanced.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\basic_vector.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\basic_vector.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\phan1_2\\demo_ui_vectorgraphic\\loginapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\loginapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\loginapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\phan1_2\\demo_ui_vectorgraphic\\loginapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\loginapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\basic_button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\basic_button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\basic_vector.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\basic_vector.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\basic_button.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\basic_button.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\phan1_2\\demo_ui_vectorgraphic\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\demo_ui_vectorgraphic\\demo_ui_vectorgraphic\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|e:\\phan1_2\\demo_ui_vectorgraphic\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40283C33-5024-4F64-8CF0-17A47243992A}|Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj|solutionrelative:demo_ui_vectorgraphic\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,53 +34,54 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\AssemblyInfo.cs",
+              "DocumentMoniker": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\AssemblyInfo.cs",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\AssemblyInfo.cs",
+              "ToolTip": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\AssemblyInfo.cs",
               "RelativeToolTip": "Demo_UI_VectorGraphic\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T13:42:37.175Z"
+              "WhenOpened": "2024-10-15T13:42:37.175Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LoginApp.xaml.cs",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\LoginApp.xaml.cs",
+              "DocumentMoniker": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\LoginApp.xaml.cs",
               "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\LoginApp.xaml.cs",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\LoginApp.xaml.cs*",
-              "RelativeToolTip": "Demo_UI_VectorGraphic\\LoginApp.xaml.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
+              "ToolTip": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\LoginApp.xaml.cs",
+              "RelativeToolTip": "Demo_UI_VectorGraphic\\LoginApp.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T13:44:05.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LoginApp_Advanced.xaml.cs",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml.cs",
+              "DocumentMoniker": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml.cs",
               "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml.cs",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml.cs*",
-              "RelativeToolTip": "Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
+              "ToolTip": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml.cs",
+              "RelativeToolTip": "Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwB0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T13:40:28.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LoginApp_Advanced.xaml",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml",
+              "DocumentMoniker": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml",
               "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml",
+              "ToolTip": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml",
               "RelativeToolTip": "Demo_UI_VectorGraphic\\LoginApp_Advanced.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-15T13:38:45.031Z",
@@ -104,73 +89,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "LoginApp.xaml",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\LoginApp.xaml",
+              "DocumentMoniker": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\LoginApp.xaml",
               "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\LoginApp.xaml",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\LoginApp.xaml",
+              "ToolTip": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\LoginApp.xaml",
               "RelativeToolTip": "Demo_UI_VectorGraphic\\LoginApp.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-15T13:38:24.103Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "App.xaml",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\App.xaml",
+              "DocumentMoniker": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\App.xaml",
               "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\App.xaml",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\App.xaml",
+              "ToolTip": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\App.xaml",
               "RelativeToolTip": "Demo_UI_VectorGraphic\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-15T13:33:12.061Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Basic_Vector.xaml.cs",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Basic_Vector.xaml.cs",
-              "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\Basic_Vector.xaml.cs",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Basic_Vector.xaml.cs",
-              "RelativeToolTip": "Demo_UI_VectorGraphic\\Basic_Vector.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T17:48:54.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Basic_Vector.xaml",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Basic_Vector.xaml",
-              "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\Basic_Vector.xaml",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Basic_Vector.xaml",
-              "RelativeToolTip": "Demo_UI_VectorGraphic\\Basic_Vector.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-14T17:18:14.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Basic_Button.xaml.cs",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Basic_Button.xaml.cs",
-              "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\Basic_Button.xaml.cs",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Basic_Button.xaml.cs",
-              "RelativeToolTip": "Demo_UI_VectorGraphic\\Basic_Button.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T17:12:59.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Basic_Button.xaml",
-              "DocumentMoniker": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Basic_Button.xaml",
-              "RelativeDocumentMoniker": "Demo_UI_VectorGraphic\\Basic_Button.xaml",
-              "ToolTip": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Basic_Button.xaml",
-              "RelativeToolTip": "Demo_UI_VectorGraphic\\Basic_Button.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-14T17:12:52.451Z"
             }
           ]
         }

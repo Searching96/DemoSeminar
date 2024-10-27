@@ -53,7 +53,7 @@ namespace Demo_UI_VectorGraphic {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Demo_UI_VectorGraphic;component/basic_button.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Demo_UI_VectorGraphic;V1.0.0.0;component/basic_button.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Basic_Button.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

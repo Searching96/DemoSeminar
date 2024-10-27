@@ -68,7 +68,7 @@ namespace Demo_UI_VectorGraphic {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Demo_UI_VectorGraphic;component/loginapp_advanced.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Demo_UI_VectorGraphic;V1.0.0.0;component/loginapp_advanced.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LoginApp_Advanced.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

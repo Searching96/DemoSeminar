@@ -28,8 +28,6 @@ namespace Demo_UI_VectorGraphic
             if (username != null && password != null)
             {
                 this.Hide();
-                LoginApp_Advanced loginApp_Advanced = new LoginApp_Advanced();
-                loginApp_Advanced.Show();
             }
             else
             {

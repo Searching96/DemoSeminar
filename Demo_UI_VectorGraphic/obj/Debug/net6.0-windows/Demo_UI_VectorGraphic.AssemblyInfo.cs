@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Demo_UI_VectorGraphic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44cbf794583915e36a4af7dfc1ffa931420fde10")]
 [assembly: System.Reflection.AssemblyProductAttribute("Demo_UI_VectorGraphic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Demo_UI_VectorGraphic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj",
+      "projectUniqueName": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj",
       "projectName": "Demo_UI_VectorGraphic",
-      "projectPath": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj",
+      "projectPath": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "E:\\Demo_UI_VectorGraphic\\Demo_UI_VectorGraphic\\obj\\",
+      "outputPath": "E:\\Phan1_2\\Demo_UI_VectorGraphic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

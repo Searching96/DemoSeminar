@@ -7,12 +7,6 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Basic_Button.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Basic_Vector.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="LoginApp.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -21,12 +15,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Basic_Button.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Basic_Vector.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="LoginApp_Advanced.xaml">
       <SubType>Designer</SubType>
     </Page>
