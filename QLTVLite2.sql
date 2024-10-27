@@ -645,3 +645,47 @@ INSERT INTO SACH_TACGIA (IDSach, IDTacGia) VALUES (119, 29);
 
 -- Sách 120
 INSERT INTO SACH_TACGIA (IDSach, IDTacGia) VALUES (120, 30);
+
+DECLARE @BookCoverLinks TABLE (Link VARCHAR(255));
+INSERT INTO @BookCoverLinks (Link) VALUES 
+    ('https://m.media-amazon.com/images/I/71zHDXu1TaL._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/51t0Z0DfEfL._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/81aY1lxk+9L._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/71rpa1-kyvL._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/81Om0n+pfyL._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/71lwUXdZJqL._SL1481_.jpg'),
+    ('https://m.media-amazon.com/images/I/91Uu0nZPbZL._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/91LY6ZgtY4L._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/A14iZuW5+9L._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/81kdr-pEJoL._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/61sKhaWOofL._SL1500_.jpg'),
+    ('https://m.media-amazon.com/images/I/81kQOrkkKkL._SL1500_.jpg');
+
+WITH NumberedRows AS (
+    SELECT 
+        ID,
+        (ROW_NUMBER() OVER (ORDER BY ID) - 1) % 12 + 1 AS CyclePosition,
+        (ROW_NUMBER() OVER (ORDER BY ID) - 1) / 12 + 1 AS CycleGroup
+    FROM SACH
+    WHERE ID BETWEEN 1 AND 120
+),
+ShuffledLinks AS (
+    SELECT 
+        Link,
+        ROW_NUMBER() OVER (PARTITION BY CycleGroup ORDER BY NEWID()) AS Position,
+        CycleGroup
+    FROM @BookCoverLinks
+    CROSS JOIN (
+        SELECT DISTINCT CycleGroup 
+        FROM NumberedRows
+    ) AS Groups
+)
+UPDATE SACH
+SET BiaSach = sl.Link
+FROM SACH s
+JOIN NumberedRows nr ON s.ID = nr.ID
+JOIN ShuffledLinks sl ON nr.CyclePosition = sl.Position 
+    AND nr.CycleGroup = sl.CycleGroup
+WHERE s.ID BETWEEN 1 AND 120;
+
+SELECT * FROM SACH;
