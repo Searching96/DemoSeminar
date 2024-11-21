@@ -1,0 +1,402 @@
+﻿<Window x:Class="GUI_QLTV.UC_QLDG"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:animation="clr-namespace:System.Windows.Media.Animation;assembly=PresentationCore"
+        Title="Library Management System"
+        Height="800" 
+        Width="1200"
+        WindowStartupLocation="CenterScreen"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        FontFamily="{materialDesign:MaterialDesignFont}">
+
+    <Window.Resources>
+        <Style x:Key="MenuButtonStyle" TargetType="Button" BasedOn="{StaticResource MaterialDesignFlatButton}">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="materialDesign:ButtonAssist.CornerRadius" Value="25"/>
+            <Setter Property="Margin" Value="16,4"/>
+            <Setter Property="Padding" Value="16,8"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#B6DEE7"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="ModernTextBox" TargetType="TextBox" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="materialDesign:HintAssist.FloatingScale" Value="0.8"/>
+            <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="True"/>
+        </Style>
+
+        <Style x:Key="ModernComboBox" TargetType="ComboBox" BasedOn="{StaticResource MaterialDesignOutlinedComboBox}">
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="materialDesign:HintAssist.FloatingScale" Value="0.8"/>
+        </Style>
+
+        <Style x:Key="ModernDatePicker" TargetType="DatePicker" BasedOn="{StaticResource MaterialDesignOutlinedDatePicker}">
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="materialDesign:HintAssist.FloatingScale" Value="0.8"/>
+        </Style>
+    </Window.Resources>
+
+    <materialDesign:DialogHost Identifier="RootDialog">
+        <Grid>
+            <!-- Main Layout Grid -->
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top Bar -->
+            <Grid Background="White" Grid.Row="0">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="10" 
+                                    ShadowDepth="1" 
+                                    Direction="270" 
+                                    Color="#DDDDDD"/>
+                </Grid.Effect>
+
+                <DockPanel Margin="16,0">
+                    <Button Style="{StaticResource MaterialDesignIconButton}" 
+                            HorizontalAlignment="Left"
+                            Click="ToggleSidebar_Click">
+                        <materialDesign:PackIcon Kind="Menu"/>
+                    </Button>
+
+                    <TextBlock Text="Reader Management" 
+                             FontSize="24" 
+                             VerticalAlignment="Center"/>
+
+                    <StackPanel DockPanel.Dock="Right" 
+                              Orientation="Horizontal" 
+                              HorizontalAlignment="Right">
+                        <Button Style="{StaticResource MaterialDesignIconButton}">
+                            <materialDesign:PackIcon Kind="Bell"/>
+                        </Button>
+                        <Button Style="{StaticResource MaterialDesignIconButton}">
+                            <materialDesign:PackIcon Kind="Settings"/>
+                        </Button>
+                    </StackPanel>
+                </DockPanel>
+            </Grid>
+
+                <!-- Main Content -->
+                <Grid x:Name="MainContent" Grid.Row="1">
+                    <ScrollViewer Margin="8">
+                        <TabControl Style="{StaticResource MaterialDesignTabControl}" TabStripPlacement="Top">
+                            <!-- Tab Quản lý thông tin -->
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Kind="AccountDetails" 
+                                           Width="24" 
+                                           Height="24" 
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,8,0"/>
+                                        <TextBlock Text="Info" 
+                             VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </TabItem.Header>
+
+                                <StackPanel>
+                                    <!-- Reader Form -->
+                                    <materialDesign:Card Margin="0,0,0,6" Padding="6">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <TextBox Grid.Column="0"
+                                 Style="{StaticResource ModernTextBox}"
+                                 materialDesign:HintAssist.Hint="Nhập mã số sinh viên"
+                                 x:Name="MaDocGia"/>
+
+                                            <TextBox Grid.Column="1"
+                                 Style="{StaticResource ModernTextBox}"
+                                 materialDesign:HintAssist.Hint="Nhập email"
+                                 x:Name="Email"/>
+
+                                            <TextBox Grid.Row="1" Grid.Column="0"
+                                 Style="{StaticResource ModernTextBox}"
+                                 materialDesign:HintAssist.Hint="Nhập họ tên"
+                                 x:Name="HoTen"/>
+
+                                            <TextBox Grid.Row="1" Grid.Column="1"
+                                 Style="{StaticResource ModernTextBox}"
+                                 materialDesign:HintAssist.Hint="Nhập SĐT"
+                                 x:Name="SoDienThoai"/>
+
+                                            <DatePicker Grid.Row="2" Grid.Column="0"
+                                   Style="{StaticResource ModernDatePicker}"
+                                   materialDesign:HintAssist.Hint="Chọn ngày sinh"
+                                   x:Name="NgaySinh"/>
+
+                                            <ComboBox Grid.Row="2" Grid.Column="1"
+                                 Style="{StaticResource ModernComboBox}"
+                                 materialDesign:HintAssist.Hint="Chọn loại độc giả"
+                                 x:Name="LoaiDocGiaComboBox">
+                                                <ComboBoxItem Content="Student"/>
+                                                <ComboBoxItem Content="Teacher"/>
+                                                <ComboBoxItem Content="Guest"/>
+                                            </ComboBox>
+
+                                            <TextBox Grid.Row="3" Grid.Column="0"
+                                 Style="{StaticResource ModernTextBox}"
+                                 materialDesign:HintAssist.Hint="Nhập địa chỉ"
+                                 x:Name="DiaChi"/>
+
+                                            <DatePicker Grid.Row="3" Grid.Column="1"
+                                   Style="{StaticResource ModernDatePicker}"
+                                   materialDesign:HintAssist.Hint="Nhập ngày đăng ký"
+                                   x:Name="NgayLapThe"/>
+
+                                            <StackPanel Grid.Row="4" Grid.ColumnSpan="2" 
+                                  Orientation="Horizontal" 
+                                  HorizontalAlignment="Right"
+                                  Margin="0,1,0,0">
+                                                <Button Style="{StaticResource MaterialDesignOutlinedButton}"
+                                    Content="Clear"
+                                    Margin="8,0"/>
+                                                <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                                    Content="Save"
+                                    Background="#2196F3"
+                                    BorderBrush="#2196F3"
+                                    Foreground="White"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </materialDesign:Card>
+
+                                    <!-- Search Section -->
+                                    <materialDesign:Card Margin="0,0,0,8" Padding="2">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="200"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <ComboBox Style="{StaticResource ModernComboBox}"
+                                 materialDesign:HintAssist.Hint="Tìm kiếm theo:"
+                                 x:Name="SearchCriteriaComboBox">
+                                                <ComboBoxItem Content="Reader ID"/>
+                                                <ComboBoxItem Content="Name"/>
+                                                <ComboBoxItem Content="Email"/>
+                                                <ComboBoxItem Content="Phone"/>
+                                            </ComboBox>
+
+                                            <TextBox Grid.Column="1" 
+                                 Style="{StaticResource ModernTextBox}"
+                                 materialDesign:HintAssist.Hint="Nhập dữ liệu tìm kiếm..."
+                                 x:Name="SearchTextBox"/>
+
+                                            <Button Grid.Column="2"
+                                Style="{StaticResource MaterialDesignFlatButton}"
+                                Content="Search"
+                                Margin="8,0,0,0"/>
+                                        </Grid>
+                                    </materialDesign:Card>
+
+                                    <!-- DataGrid -->
+                                    <materialDesign:Card>
+                                        <DataGrid x:Name="ReadersDataGrid"
+                             AutoGenerateColumns="False"
+                             CanUserAddRows="False"
+                             CanUserDeleteRows="False"
+                             IsReadOnly="True"
+                             materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+                             materialDesign:DataGridAssist.ColumnHeaderPadding="8">
+                                        </DataGrid>
+                                    </materialDesign:Card>
+                                </StackPanel>
+                            </TabItem>
+
+                            <!-- Tab Thống kê mượn trả -->
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Kind="ChartLine" 
+                                           Width="24" 
+                                           Height="24" 
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,8,0"/>
+                                        <TextBlock Text="Loan" 
+                             VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </TabItem.Header>
+                                <Grid>
+                                    <!-- Empty for now -->
+                                </Grid>
+                            </TabItem>
+
+                            <!-- Tab Lịch sử hoạt động -->
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Kind="History" 
+                           Width="24" 
+                           Height="24" 
+                           VerticalAlignment="Center"
+                           Margin="0,0,8,0"/>
+                                        <TextBlock Text="History" 
+             VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </TabItem.Header>
+                                <Grid>
+                                    <!-- Empty for now -->
+                                </Grid>
+                            </TabItem>
+
+                            <!-- Tab Thẻ thư viện -->
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Kind="Card" 
+                           Width="24" 
+                           Height="24" 
+                           VerticalAlignment="Center"
+                           Margin="0,0,8,0"/>
+                                        <TextBlock Text="Card" 
+             VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </TabItem.Header>
+                                <Grid>
+                                    <!-- Empty for now -->
+                                </Grid>
+                            </TabItem>
+
+                            <!-- Tab Báo cáo vi phạm -->
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Kind="AlertCircle" 
+                           Width="24" 
+                           Height="24" 
+                           VerticalAlignment="Center"
+                           Margin="0,0,8,0"/>
+                                        <TextBlock Text="Violations" 
+             VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </TabItem.Header>
+                                <Grid>
+                                    <!-- Empty for now -->
+                                </Grid>
+                            </TabItem>
+                        </TabControl>
+                    </ScrollViewer>
+                </Grid>
+            </Grid>
+
+
+            <!-- Overlay Sidebar -->
+            <Grid x:Name="SidebarOverlay" 
+                  Visibility="Collapsed"
+                  Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Semi-transparent background -->
+                <Rectangle Grid.ColumnSpan="2" 
+                         Fill="Black" 
+                         Opacity="0.5"
+                         MouseDown="CloseSidebar_Click"/>
+                
+                <!-- Sidebar -->
+                <Grid x:Name="Sidebar" 
+                      Background="#1976D2"
+                      HorizontalAlignment="Left">
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Top" Margin="0,32,0,32">
+                            <materialDesign:PackIcon Kind="Library" 
+                                                       Width="48" 
+                                                       Height="48" 
+                                                       Foreground="White"
+                                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="LIBRARY MANAGEMENT" 
+                                         FontSize="20" 
+                                         Foreground="White" 
+                                         FontWeight="Bold" 
+                                         TextAlignment="Center"
+                                         Margin="0,16,0,32"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button Style="{StaticResource MenuButtonStyle}"
+                                        Click="Dashboard_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="ViewDashboard" 
+                                                               Width="24" 
+                                                               Height="24" 
+                                                               Margin="0,0,12,0"/>
+                                    <TextBlock Text="Dashboard"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource MenuButtonStyle}"
+                                        Click="ReaderManagement_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="AccountMultiple" 
+                                                               Width="24" 
+                                                               Height="24" 
+                                                               Margin="0,0,12,0"/>
+                                    <TextBlock Text="Reader Management"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource MenuButtonStyle}"
+                                        Click="BookManagement_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="BookMultiple" 
+                                                               Width="24" 
+                                                               Height="24" 
+                                                               Margin="0,0,12,0"/>
+                                    <TextBlock Text="Book Management"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource MenuButtonStyle}"
+                                        Click="LoanManagement_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="SwapHorizontal" 
+                                                               Width="24" 
+                                                               Height="24" 
+                                                               Margin="0,0,12,0"/>
+                                    <TextBlock Text="Loan Management"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource MenuButtonStyle}"
+                                        Click="Report_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="ChartBar" 
+                                                               Width="24" 
+                                                               Height="24" 
+                                                               Margin="0,0,12,0"/>
+                                    <TextBlock Text="Reports"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </DockPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+    </materialDesign:DialogHost>
+</Window>
+    
+    
