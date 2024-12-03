@@ -29,7 +29,7 @@
 
             <!-- Title Section -->
             <TextBlock Text="Thông Tin Sách" FontSize="18" FontWeight="Bold" 
-Margin="0,0,0,10" HorizontalAlignment="Left" Grid.Row="0"/>
+                        Margin="0,0,0,10" HorizontalAlignment="Left" Grid.Row="0"/>
 
             <!-- Menu Buttons -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,10" Grid.Row="1">

@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="UCChiTietSach.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UCQuanLiMuonTra.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,9 +28,21 @@
     <Compile Update="UCTrangChu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UCTrangChuUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WLoginScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WUserWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCChiTietSach.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UCQuanLiMuonTra.xaml">
@@ -46,6 +61,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UCTrangChu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCTrangChuUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WLoginScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WUserWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

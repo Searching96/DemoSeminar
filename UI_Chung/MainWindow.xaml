@@ -82,31 +82,31 @@
 
                     <!--Menu Buttons-->
                     <StackPanel DockPanel.Dock="Top">
-                        <Button x:Name="btnDashBoard" Style="{StaticResource menuButton}" Click="btnDashBoard_Click" >
+                        <Button x:Name="btnDashBoard" Style="{StaticResource menuAdminButton}" Click="btnDashBoard_Click" >
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Trang chủ"/>
                             </StackPanel>
                         </Button>
-                        <Button x:Name="btnQLMT" Style="{StaticResource menuButton}" Click="btnQLMT_Click" >
+                        <Button x:Name="btnQLMT" Style="{StaticResource menuAdminButton}" Click="btnQLMT_Click" >
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="Book" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Quản lí mượn trả"/>
                             </StackPanel>
                         </Button>
-                        <Button x:Name="btnBookManage" Style="{StaticResource menuButton}" Click="btnBookManage_Click" >
+                        <Button x:Name="btnBookManage" Style="{StaticResource menuAdminButton}" Click="btnBookManage_Click" >
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="AccountMultipleOutline" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Quản lí Sách"/>
                             </StackPanel>
                         </Button>
-                        <Button x:Name ="btnReaderManage" Style="{StaticResource menuButton}" Click="btnReaderManage_Click">
+                        <Button x:Name ="btnReaderManage" Style="{StaticResource menuAdminButton}" Click="btnReaderManage_Click">
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="CashMultiple" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Quản lí độc giả"/>
                             </StackPanel>
                         </Button>
-                        <Button x:Name ="btnStatisticalReport" Style="{StaticResource menuButton}" Click="btnStatisticalReport_Click">
+                        <Button x:Name ="btnStatisticalReport" Style="{StaticResource menuAdminButton}" Click="btnStatisticalReport_Click">
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="ForumOutline" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Báo Cáo Thống Kê"/>
@@ -115,7 +115,7 @@
                     </StackPanel>
 
                     <!-- Logout Button -->
-                    <Button x:Name ="btnLogOut" Style="{StaticResource menuButton}" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="15 0 15 20" Click="btnLogOut_Click" >
+                    <Button x:Name ="btnLogOut" Style="{StaticResource menuAdminButton}" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="15 0 15 20" Click="btnLogOut_Click" >
                         <StackPanel Orientation="Horizontal">
                             <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
                             <TextBlock Text="Đăng xuất"/>

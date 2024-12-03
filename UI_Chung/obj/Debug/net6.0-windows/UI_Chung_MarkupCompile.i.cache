@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Visual studio\Project\UI_Chung\obj\Debug\net6.0-windows\
+E:\Mạng\DemoSeminarLTTq\DemoSeminar\UI_Chung\obj\Debug\net6.0-windows\
 UI_Chung
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\Visual studio\Project\UI_Chung\App.xaml
-7-1697711985
+E:\Mạng\DemoSeminarLTTq\DemoSeminar\UI_Chung\App.xaml
+11183224476
+11447365393
+39-1500140948
+2361969006761
+MainWindow.xaml;UCChiTietSach.xaml;UCQuanLiMuonTra.xaml;UCQuanLySach.xaml;UCQuanLyTacGia.xaml;UCQuanLyTheLoai.xaml;UCQuanLyThongTinSach.xaml;UCTrangChu.xaml;UCTrangChuUser.xaml;WLoginScreen.xaml;WUserWindow.xaml;
 
-132052032515
-196-1119205092
-MainWindow.xaml;UCQuanLiMuonTra.xaml;UCQuanLySach.xaml;UCQuanLyTacGia.xaml;UCQuanLyTheLoai.xaml;UCQuanLyThongTinSach.xaml;UCTrangChu.xaml;
-
-True
+False
 
